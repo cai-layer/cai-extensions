@@ -1,0 +1,10 @@
+# cai-extension
+name: JSON to YAML
+description: Convert JSON to YAML format
+author: clipboard-ai
+version: "1.0"
+tags: [developer, conversion]
+icon: curlybraces
+type: prompt
+prompt: |
+  Convert this JSON to YAML format. Output only the YAML, no explanations or code fences.

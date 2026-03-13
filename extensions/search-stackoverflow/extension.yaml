@@ -1,0 +1,9 @@
+# cai-extension
+name: Search StackOverflow
+description: Search StackOverflow for the selected text
+author: clipboard-ai
+version: "1.0"
+tags: [search, developer]
+icon: magnifyingglass
+type: url
+url: "https://stackoverflow.com/search?q=%s"

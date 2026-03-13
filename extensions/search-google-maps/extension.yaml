@@ -1,0 +1,9 @@
+# cai-extension
+name: Search Google Maps
+description: Open the selected address in Google Maps
+author: clipboard-ai
+version: "1.0"
+tags: [search, maps]
+icon: map.fill
+type: url
+url: "https://www.google.com/maps/search/%s"

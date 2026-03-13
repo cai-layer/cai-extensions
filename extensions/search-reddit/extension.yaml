@@ -1,0 +1,9 @@
+# cai-extension
+name: Search Reddit
+description: Search Reddit for the selected text
+author: clipboard-ai
+version: "1.0"
+tags: [search, social]
+icon: magnifyingglass
+type: url
+url: "https://www.reddit.com/search/?q=%s"

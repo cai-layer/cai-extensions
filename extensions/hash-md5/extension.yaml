@@ -1,0 +1,10 @@
+# cai-extension
+name: Hash MD5
+description: Generate an MD5 hash of the text
+author: clipboard-ai
+version: "1.0"
+tags: [developer, security]
+icon: number.circle.fill
+type: shell
+show_in_action_list: true
+shell: "echo -n '{{result}}' | md5"

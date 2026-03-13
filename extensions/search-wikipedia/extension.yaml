@@ -1,0 +1,9 @@
+# cai-extension
+name: Search Wikipedia
+description: Look up the selected text on Wikipedia
+author: clipboard-ai
+version: "1.0"
+tags: [search, reference]
+icon: book.fill
+type: url
+url: "https://en.wikipedia.org/wiki/Special:Search?search=%s"
