@@ -1,2 +1,23 @@
 [
+{
+  "slug": "make-shorter",
+  "name": "Make Shorter",
+  "description": "Condense text while preserving key points",
+  "author": "clipboard-ai",
+  "version": "1.0",
+  "icon": "text.badge.minus",
+  "type": "shortcut",
+  "tags": [writing, editing]
+}
+,
+{
+  "slug": "professional-email",
+  "name": "Professional Email",
+  "description": "Rewrite text as a polished professional email",
+  "author": "clipboard-ai",
+  "version": "1.0",
+  "icon": "envelope.fill",
+  "type": "shortcut",
+  "tags": [writing, email, business]
+}
 ]
