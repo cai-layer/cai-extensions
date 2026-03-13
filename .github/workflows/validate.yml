@@ -1,0 +1,54 @@
+name: Validate Extensions
+
+on:
+  pull_request:
+    paths:
+      - 'extensions/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate extension YAML files
+        run: |
+          errors=0
+          for dir in extensions/*/; do
+            [ -d "$dir" ] || continue
+            slug=$(basename "$dir")
+            file="$dir/extension.yaml"
+
+            if [ ! -f "$file" ]; then
+              echo "::error::$slug: missing extension.yaml"
+              errors=$((errors + 1))
+              continue
+            fi
+
+            # Check required fields
+            for field in name description author version tags icon type; do
+              if ! grep -q "^$field:" "$file"; then
+                echo "::error::$slug: missing required field '$field'"
+                errors=$((errors + 1))
+              fi
+            done
+
+            # Check type is valid
+            type=$(grep '^type:' "$file" | head -1 | sed 's/^type: *//')
+            if [ "$type" != "shortcut" ] && [ "$type" != "destination" ]; then
+              echo "::error::$slug: type must be 'shortcut' or 'destination', got '$type'"
+              errors=$((errors + 1))
+            fi
+
+            # Check slug matches directory name convention (lowercase, hyphens)
+            if ! echo "$slug" | grep -qE '^[a-z0-9][a-z0-9-]*$'; then
+              echo "::error::$slug: directory name must be lowercase with hyphens only"
+              errors=$((errors + 1))
+            fi
+          done
+
+          if [ $errors -gt 0 ]; then
+            echo "::error::Found $errors validation error(s)"
+            exit 1
+          fi
+          echo "All extensions valid!"

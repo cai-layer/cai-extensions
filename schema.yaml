@@ -1,0 +1,61 @@
+# Cai Extension Schema v1
+# This file documents the YAML format for Cai extensions.
+# Extensions are either shortcuts (LLM prompts, URL templates) or output destinations.
+
+# --- Required fields ---
+name: "Human-readable name"          # Shown in Cai's action list
+description: "What this extension does" # One-liner for the extension browser
+author: "github-username"            # GitHub username of the creator
+version: "1.0"                       # Semver-ish version string
+tags: [category, subcategory]        # For filtering/search in the extension browser
+icon: "star.fill"                    # SF Symbol name (see https://developer.apple.com/sf-symbols/)
+
+# --- Extension type (pick one) ---
+
+# Option A: Shortcut — appears in the action list
+type: shortcut
+shortcut:
+  # kind: prompt — sends clipboard text to the LLM with this instruction
+  kind: prompt  # prompt | url
+  value: |
+    Your LLM prompt here.
+    The clipboard text is passed automatically as context.
+
+  # kind: url — opens a URL with %s replaced by the clipboard text
+  # kind: url
+  # value: "https://example.com/search?q=%s"
+
+# Option B: Output destination — appears after LLM results
+# type: destination
+# destination:
+#   kind: webhook  # webhook | applescript | url_scheme | shell
+#   show_in_action_list: false  # true = also show as a direct action (skips LLM)
+#
+#   # For kind: webhook
+#   webhook:
+#     url: "https://api.example.com/endpoint"
+#     method: POST  # POST | PUT | PATCH
+#     headers:
+#       Content-Type: application/json
+#     body: '{"text": "{{result}}"}'
+#
+#   # For kind: applescript
+#   applescript: |
+#     tell application "Bear"
+#       create note with text "{{result}}"
+#     end tell
+#
+#   # For kind: url_scheme
+#   url_scheme: "bear://x-callback-url/create?text={{result}}"
+#
+#   # For kind: shell
+#   shell: "echo '{{result}}' | pbcopy"
+
+# --- Optional: setup fields (user must configure before first use) ---
+# setup:
+#   - key: api_key
+#     label: "API Key"
+#     secret: true   # stored in Keychain, not UserDefaults
+#   - key: channel
+#     label: "Channel Name"
+#     secret: false

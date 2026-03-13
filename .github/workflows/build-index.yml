@@ -1,0 +1,61 @@
+name: Build Extension Index
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'extensions/**'
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build index.json from extensions
+        run: |
+          echo '[' > index.json
+          first=true
+          for dir in extensions/*/; do
+            file="$dir/extension.yaml"
+            [ -f "$file" ] || continue
+
+            name=$(grep '^name:' "$file" | head -1 | sed 's/^name: *//' | sed 's/^"//' | sed 's/"$//')
+            desc=$(grep '^description:' "$file" | head -1 | sed 's/^description: *//' | sed 's/^"//' | sed 's/"$//')
+            author=$(grep '^author:' "$file" | head -1 | sed 's/^author: *//' | sed 's/^"//' | sed 's/"$//')
+            version=$(grep '^version:' "$file" | head -1 | sed 's/^version: *//' | sed 's/^"//' | sed 's/"$//')
+            icon=$(grep '^icon:' "$file" | head -1 | sed 's/^icon: *//' | sed 's/^"//' | sed 's/"$//')
+            type=$(grep '^type:' "$file" | head -1 | sed 's/^type: *//' | sed 's/^"//' | sed 's/"$//')
+            tags=$(grep '^tags:' "$file" | head -1 | sed 's/^tags: *//')
+            slug=$(basename "$dir")
+
+            if [ "$first" = true ]; then
+              first=false
+            else
+              echo ',' >> index.json
+            fi
+
+            cat >> index.json <<EOF
+          {
+            "slug": "$slug",
+            "name": "$name",
+            "description": "$desc",
+            "author": "$author",
+            "version": "$version",
+            "icon": "$icon",
+            "type": "$type",
+            "tags": $tags
+          }
+          EOF
+          done
+          echo ']' >> index.json
+
+      - name: Commit index.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.json
+          git diff --cached --quiet || git commit -m "Update index.json"
+          git push
