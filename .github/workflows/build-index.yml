@@ -30,7 +30,7 @@ jobs:
             version=$(grep '^version:' "$file" | head -1 | sed 's/^version: *//' | sed 's/^"//' | sed 's/"$//')
             icon=$(grep '^icon:' "$file" | head -1 | sed 's/^icon: *//' | sed 's/^"//' | sed 's/"$//')
             type=$(grep '^type:' "$file" | head -1 | sed 's/^type: *//' | sed 's/^"//' | sed 's/"$//')
-            tags=$(grep '^tags:' "$file" | head -1 | sed 's/^tags: *//')
+            tags=$(grep '^tags:' "$file" | head -1 | sed 's/^tags: *//' | sed 's/\[/["/;s/\]/"]/' | sed 's/, /", "/g')
             slug=$(basename "$dir")
 
             if [ "$first" = true ]; then
