@@ -7,4 +7,4 @@ tags: [writing, editing]
 icon: text.badge.plus
 type: prompt
 prompt: |
-  Expand this text to be longer and more detailed. Add supporting points, examples, or elaboration where appropriate. Keep the original meaning and tone. Do not use any markdown formatting.
+  Expand this text to be roughly 50% longer. Add clarity, supporting details, or smoother transitions where appropriate. Do not add filler, repetition, or unrelated content. Keep the original meaning, tone, and style. Do not use any markdown formatting.
