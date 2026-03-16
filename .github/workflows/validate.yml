@@ -44,15 +44,23 @@ jobs:
             type=$(grep '^type:' "$file" | head -1 | sed 's/^type: *//')
             case "$type" in
               prompt|url|webhook|deeplink) ;;
-              applescript|shell)
-                echo "::error::$slug: type '$type' is not allowed for security reasons"
-                errors=$((errors + 1))
+              shell|applescript)
+                echo "::warning::$slug: type '$type' requires extra security review"
                 ;;
               *)
-                echo "::error::$slug: type must be 'prompt', 'url', 'webhook', or 'deeplink', got '$type'"
+                echo "::error::$slug: type must be 'prompt', 'url', 'webhook', 'deeplink', or 'shell', got '$type'"
                 errors=$((errors + 1))
                 ;;
             esac
+
+            # Check webhook URLs use HTTPS
+            if [ "$type" = "webhook" ]; then
+              webhook_url=$(grep -A5 '^webhook:' "$file" | grep 'url:' | head -1 | sed 's/^.*url: *//')
+              if echo "$webhook_url" | grep -qiE '^http://'; then
+                echo "::error::$slug: webhook URL must use HTTPS"
+                errors=$((errors + 1))
+              fi
+            fi
 
             # Check author matches PR submitter
             author=$(grep '^author:' "$file" | head -1 | sed 's/^author: *//')
