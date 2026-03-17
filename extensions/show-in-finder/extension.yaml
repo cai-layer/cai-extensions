@@ -1,0 +1,9 @@
+# cai-extension
+name: Show in Finder
+description: Open a file or folder path in Finder
+author: clipboard-ai
+version: "1.0"
+tags: [productivity, macos]
+icon: folder
+type: shell
+command: open "{{result}}"
