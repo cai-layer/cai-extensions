@@ -44,6 +44,17 @@
 }
 ,
 {
+  "slug": "create-github-issue",
+  "name": "Create GitHub Issue",
+  "description": "Create a GitHub issue from clipboard text",
+  "author": "clipboard-ai",
+  "version": "1.0",
+  "icon": "exclamationmark.circle",
+  "type": "shell",
+  "tags": ["developer", "github"]
+}
+,
+{
   "slug": "explain-like-im-five",
   "name": "Explain Like I'm Five",
   "description": "Simplify complex text into plain, easy-to-understand language",
@@ -162,6 +173,17 @@
   "icon": "play.rectangle.fill",
   "type": "url",
   "tags": ["search", "video"]
+}
+,
+{
+  "slug": "show-in-finder",
+  "name": "Show in Finder",
+  "description": "Open a file or folder path in Finder",
+  "author": "clipboard-ai",
+  "version": "1.0",
+  "icon": "folder",
+  "type": "shell",
+  "tags": ["productivity", "macos"]
 }
 ,
 {
