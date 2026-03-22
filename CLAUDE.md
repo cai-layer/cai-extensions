@@ -11,14 +11,14 @@ Community extensions repo for [Cai](https://getcai.app), a native macOS clipboar
 
 ## Extension Format (Schema v2)
 
-All extensions are YAML files starting with `# cai-extension` on the first line. Four types:
+All extensions are YAML files starting with `# cai-extension` on the first line. Types:
 
-- `type: prompt` — LLM-powered (clipboard text sent with instruction)
-- `type: url` — opens URL with `%s` replaced by clipboard text
-- `type: webhook` — HTTP POST/PUT/PATCH to an endpoint
-- `type: deeplink` — opens a URL scheme (e.g. `bear://`)
-
-Shell and AppleScript types exist but are blocked from clipboard install for security.
+- `type: prompt` — LLM-powered (clipboard text sent with instruction) → installs as Custom Action
+- `type: url` — opens URL with `%s` replaced by clipboard text → installs as Custom Action
+- `type: shell` — runs a shell command → installs as Custom Action or Destination
+- `type: webhook` — HTTP POST/PUT/PATCH to an endpoint → installs as Destination
+- `type: deeplink` — opens a URL scheme (e.g. `bear://`) → installs as Destination
+- `type: applescript` — runs AppleScript → installs as Destination (blocked from clipboard install)
 
 ## Creating an Extension
 
@@ -45,6 +45,7 @@ Shell and AppleScript types exist but are blocked from clipboard install for sec
 
 ## Security Rules
 
-- No `applescript` or `shell` types in community contributions
+- `applescript` types are not accepted from community contributors
+- `shell` types require extra security review before merging
 - Webhook extensions should use `{{setup_field}}` for URLs, never hardcoded
 - No API keys in YAML — use `setup` fields with `secret: true`
