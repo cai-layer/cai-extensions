@@ -44,17 +44,6 @@
 }
 ,
 {
-  "slug": "create-github-issue",
-  "name": "Create GitHub Issue",
-  "description": "Create a GitHub issue from clipboard text",
-  "author": "clipboard-ai",
-  "version": "1.0",
-  "icon": "exclamationmark.circle",
-  "type": "shell",
-  "tags": ["developer", "github"]
-}
-,
-{
   "slug": "explain-like-im-five",
   "name": "Explain Like I'm Five",
   "description": "Simplify complex text into plain, easy-to-understand language",
