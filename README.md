@@ -6,7 +6,7 @@ Community-contributed extensions for [Cai](https://getcai.app), the macOS clipbo
 
 Open **Settings > Community Extensions** in Cai to browse and install extensions with one click.
 
-![Extension Browser](assets/extension-browser.png.png)
+<img src="assets/extension-browser.png.png" alt="Extension Browser" width="400">
 
 You can also install manually: copy the YAML content of any `extension.yaml` (including the `# cai-extension` header), press **Option+C** — Cai detects it and offers to install.
 
