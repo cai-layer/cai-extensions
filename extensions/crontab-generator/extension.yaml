@@ -1,0 +1,10 @@
+# cai-extension
+name: Crontab Generator
+description: Convert a schedule description into a crontab expression
+author: cai-layer
+version: "1.0"
+tags: [developer, utility]
+icon: clock.fill
+type: prompt
+prompt: |
+  Convert this schedule description into a crontab expression. Respond with only the 5-field cron expression followed by a brief comment explaining it. Example output: 0 9 * * 1-5  # weekdays at 9am. Do not use any markdown formatting.
