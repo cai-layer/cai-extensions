@@ -1,0 +1,9 @@
+# cai-extension
+name: Lowercase
+description: Convert text to lowercase
+author: cai-layer
+version: "1.0"
+tags: [text, formatting]
+icon: textformat.size.smaller
+type: shell
+command: echo "{{result}}" | tr '[:upper:]' '[:lower:]'
