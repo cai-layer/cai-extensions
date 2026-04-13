@@ -1,0 +1,10 @@
+# cai-extension
+name: Suggest Emojis
+description: Suggest relevant emojis for the selected text
+author: cai-layer
+version: "1.0"
+tags: [writing, emoji]
+icon: face.smiling
+type: prompt
+prompt: |
+  Suggest 10 emojis that best represent the meaning, mood, and key themes of this text. Order by relevance, most relevant first. No duplicates. Output only the emojis separated by spaces, nothing else. Do not use any markdown formatting.
