@@ -1,0 +1,9 @@
+# cai-extension
+name: Quick Note
+description: Create a new Apple Note from clipboard text
+author: cai-layer
+version: "1.0"
+tags: [productivity, notes]
+icon: note.text
+type: shell
+command: osascript -e 'tell application "Notes" to tell account "iCloud" to make new note at folder "Notes" with properties {body:"{{result}}"}' -e 'tell application "Notes" to activate' && echo "Note created"
