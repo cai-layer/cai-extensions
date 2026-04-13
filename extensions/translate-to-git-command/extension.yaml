@@ -1,0 +1,10 @@
+# cai-extension
+name: Translate to Git Command
+description: Convert a description into the exact git command
+author: cai-layer
+version: "1.0"
+tags: [developer, git]
+icon: terminal.fill
+type: prompt
+prompt: |
+  The text describes what the user wants to do in Git. Respond with only the exact git command(s) needed. No explanation. If multiple commands are needed, put each on its own line. Do not use any markdown formatting or code blocks.
