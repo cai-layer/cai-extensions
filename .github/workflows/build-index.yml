@@ -64,5 +64,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add index.json
           git diff --cached --quiet || git commit -m "Update index.json"
-          git pull --rebase
-          git push
+          for i in 1 2 3; do
+            git pull --rebase && git push && break
+            echo "Push attempt $i failed, retrying..."
+            sleep 3
+          done
