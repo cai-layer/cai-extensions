@@ -1,0 +1,10 @@
+# cai-extension
+name: Extract Keywords
+description: Pull topic tags and keywords from text
+author: cai-layer
+version: "1.0"
+tags: [productivity, analysis]
+icon: tag.fill
+type: prompt
+prompt: |
+  Extract 5 to 15 keywords or topic tags from this text. Pick words that best describe the main subjects and themes. Output as a comma-separated list, lowercase. Do not use any markdown formatting.
