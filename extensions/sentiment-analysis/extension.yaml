@@ -1,0 +1,16 @@
+# cai-extension
+name: Sentiment Analysis
+description: Determine the emotional tone of text
+author: cai-layer
+version: "1.0"
+tags: [analysis, writing]
+icon: face.smiling
+type: prompt
+prompt: |
+  Analyze the emotional tone of this text. Respond with exactly this format:
+
+  Sentiment: [Positive/Negative/Neutral/Mixed]
+  Confidence: [High/Medium/Low]
+  Key signals: [list 2-3 words or phrases that indicate the tone]
+
+  Do not use any markdown formatting.
