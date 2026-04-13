@@ -1,0 +1,10 @@
+# cai-extension
+name: Rephrase as Tweet
+description: Compress text into a tweet under 280 characters
+author: cai-layer
+version: "1.0"
+tags: [writing, social]
+icon: bubble.fill
+type: prompt
+prompt: |
+  Rewrite this text as a single tweet. Must be under 280 characters. Capture the key point. Be direct and engaging. No hashtags unless they add real value. Do not use any markdown formatting.
