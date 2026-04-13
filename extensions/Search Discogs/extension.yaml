@@ -1,0 +1,9 @@
+# cai-extension
+name: Search Discogs
+description: Search Discogs for an album or artist
+author: clipboard-ai
+version: "1.0"
+tags: [search, music]
+icon: opticaldisc.fill
+type: url
+url: "https://www.discogs.com/search/?q=%s"
