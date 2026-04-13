@@ -1,0 +1,20 @@
+# cai-extension
+name: Pros and Cons
+description: Analyze a topic or decision as pros and cons
+author: cai-layer
+version: "1.0"
+tags: [productivity, analysis]
+icon: scale.3d
+type: prompt
+prompt: |
+  Analyze this topic or decision. List the pros and cons as two separate sections. Each point should be one short sentence. Be objective and balanced. Format as:
+
+  Pros:
+  - point
+  - point
+
+  Cons:
+  - point
+  - point
+
+  Do not use any markdown formatting.
