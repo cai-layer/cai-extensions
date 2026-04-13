@@ -1,0 +1,9 @@
+# cai-extension
+name: My Public IP
+description: Get your public IP address
+author: cai-layer
+version: "1.0"
+tags: [developer, network]
+icon: globe
+type: shell
+command: curl -s ifconfig.me
