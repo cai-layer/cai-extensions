@@ -5,6 +5,7 @@ on:
     branches: [master]
     paths:
       - 'extensions/**'
+  workflow_dispatch:
 
 concurrency:
   group: build-index
