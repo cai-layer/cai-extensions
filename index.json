@@ -44,6 +44,28 @@
 }
 ,
 {
+  "slug": "crontab-generator",
+  "name": "Crontab Generator",
+  "description": "Convert a schedule description into a crontab expression",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "clock.fill",
+  "type": "prompt",
+  "tags": ["developer", "utility"]
+}
+,
+{
+  "slug": "decline-email",
+  "name": "Decline Email",
+  "description": "Draft a polite email declining a request or invitation",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "envelope.badge.shield.half.filled.fill",
+  "type": "prompt",
+  "tags": ["writing", "email"]
+}
+,
+{
   "slug": "explain-like-im-five",
   "name": "Explain Like I'm Five",
   "description": "Simplify complex text into plain, easy-to-understand language",
@@ -52,6 +74,28 @@
   "icon": "lightbulb.fill",
   "type": "prompt",
   "tags": ["writing", "learning"]
+}
+,
+{
+  "slug": "extract-action-items",
+  "name": "Extract Action Items",
+  "description": "Pull actionable tasks from notes, emails, or messages",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "checklist",
+  "type": "prompt",
+  "tags": ["productivity", "writing"]
+}
+,
+{
+  "slug": "extract-keywords",
+  "name": "Extract Keywords",
+  "description": "Pull topic tags and keywords from text",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "tag.fill",
+  "type": "prompt",
+  "tags": ["productivity", "analysis"]
 }
 ,
 {
@@ -66,6 +110,17 @@
 }
 ,
 {
+  "slug": "humanize-text",
+  "name": "Humanize Text",
+  "description": "Make AI-generated text sound natural and human",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "person.fill",
+  "type": "prompt",
+  "tags": ["writing", "editing"]
+}
+,
+{
   "slug": "json-to-yaml",
   "name": "JSON to YAML",
   "description": "Convert JSON to YAML format",
@@ -74,6 +129,28 @@
   "icon": "curlybraces",
   "type": "prompt",
   "tags": ["developer", "conversion"]
+}
+,
+{
+  "slug": "kill-port",
+  "name": "Kill Port",
+  "description": "Kill the process running on a given port number",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "xmark.circle.fill",
+  "type": "shell",
+  "tags": ["developer", "system"]
+}
+,
+{
+  "slug": "lowercase",
+  "name": "Lowercase",
+  "description": "Convert text to lowercase",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "textformat.size.smaller",
+  "type": "shell",
+  "tags": ["text", "formatting"]
 }
 ,
 {
@@ -99,6 +176,28 @@
 }
 ,
 {
+  "slug": "my-local-ip",
+  "name": "My Local IP",
+  "description": "Get your local network IP address",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "wifi",
+  "type": "shell",
+  "tags": ["developer", "network"]
+}
+,
+{
+  "slug": "my-public-ip",
+  "name": "My Public IP",
+  "description": "Get your public IP address",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "globe",
+  "type": "shell",
+  "tags": ["developer", "network"]
+}
+,
+{
   "slug": "organize-desktop-by-date",
   "name": "Organize Desktop by Date",
   "description": "Move Desktop files into a dated folder",
@@ -121,6 +220,50 @@
 }
 ,
 {
+  "slug": "pros-and-cons",
+  "name": "Pros and Cons",
+  "description": "Analyze a topic or decision as pros and cons",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "scale.3d",
+  "type": "prompt",
+  "tags": ["productivity", "analysis"]
+}
+,
+{
+  "slug": "quick-note",
+  "name": "Quick Note",
+  "description": "Create a new Apple Note from clipboard text",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "note.text",
+  "type": "shell",
+  "tags": ["productivity", "notes"]
+}
+,
+{
+  "slug": "quick-reminder",
+  "name": "Quick Reminder",
+  "description": "Create an Apple Reminder from clipboard text",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "checklist",
+  "type": "shell",
+  "tags": ["productivity", "reminders"]
+}
+,
+{
+  "slug": "rephrase-as-tweet",
+  "name": "Rephrase as Tweet",
+  "description": "Compress text into a tweet under 280 characters",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "bubble.fill",
+  "type": "prompt",
+  "tags": ["writing", "social"]
+}
+,
+{
   "slug": "search-discogs",
   "name": "Search Discogs",
   "description": "Search Discogs for an album or artist",
@@ -129,6 +272,17 @@
   "icon": "opticaldisc.fill",
   "type": "url",
   "tags": ["search", "music"]
+}
+,
+{
+  "slug": "search-github",
+  "name": "Search GitHub",
+  "description": "Search GitHub code for the selected text",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "magnifyingglass",
+  "type": "url",
+  "tags": ["search", "developer"]
 }
 ,
 {
@@ -220,6 +374,17 @@
 }
 ,
 {
+  "slug": "sentiment-analysis",
+  "name": "Sentiment Analysis",
+  "description": "Determine the emotional tone of text",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "face.smiling",
+  "type": "prompt",
+  "tags": ["analysis", "writing"]
+}
+,
+{
   "slug": "show-in-finder",
   "name": "Show in Finder",
   "description": "Open a file or folder path in Finder",
@@ -228,6 +393,28 @@
   "icon": "folder",
   "type": "shell",
   "tags": ["productivity", "macos"]
+}
+,
+{
+  "slug": "show-listening-ports",
+  "name": "Show Listening Ports",
+  "description": "Show all processes listening on TCP ports",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "network",
+  "type": "shell",
+  "tags": ["developer", "system"]
+}
+,
+{
+  "slug": "suggest-emojis",
+  "name": "Suggest Emojis",
+  "description": "Suggest relevant emojis for the selected text",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "face.smiling",
+  "type": "prompt",
+  "tags": ["writing", "emoji"]
 }
 ,
 {
@@ -250,5 +437,49 @@
   "icon": "briefcase.fill",
   "type": "prompt",
   "tags": ["writing", "tone", "business"]
+}
+,
+{
+  "slug": "translate-to-git-command",
+  "name": "Translate to Git Command",
+  "description": "Convert a description into the exact git command",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "terminal.fill",
+  "type": "prompt",
+  "tags": ["developer", "git"]
+}
+,
+{
+  "slug": "trim-whitespace",
+  "name": "Trim Whitespace",
+  "description": "Remove leading and trailing whitespace from text",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "text.justify.leading",
+  "type": "shell",
+  "tags": ["developer", "text"]
+}
+,
+{
+  "slug": "uppercase",
+  "name": "Uppercase",
+  "description": "Convert text to UPPERCASE",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "textformat.size.larger",
+  "type": "shell",
+  "tags": ["text", "formatting"]
+}
+,
+{
+  "slug": "write-tagline",
+  "name": "Write Tagline",
+  "description": "Generate punchy taglines for a product or concept",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "lightbulb.fill",
+  "type": "prompt",
+  "tags": ["creative", "marketing"]
 }
 ]
