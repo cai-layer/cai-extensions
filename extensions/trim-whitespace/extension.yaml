@@ -1,0 +1,9 @@
+# cai-extension
+name: Trim Whitespace
+description: Remove leading and trailing whitespace from text
+author: cai-layer
+version: "1.0"
+tags: [developer, text]
+icon: text.justify.leading
+type: shell
+command: echo "{{result}}" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//'
