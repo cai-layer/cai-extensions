@@ -99,6 +99,17 @@
 }
 ,
 {
+  "slug": "organize-desktop-by-date",
+  "name": "Organize Desktop by Date",
+  "description": "Move Desktop files into a dated folder",
+  "author": "kisyaki",
+  "version": "1.0",
+  "icon": "folder.badge.gearshape",
+  "type": "shell",
+  "tags": ["productivity", "organization"]
+}
+,
+{
   "slug": "professional-email",
   "name": "Professional Email",
   "description": "Rewrite text as a polished professional email",
@@ -107,6 +118,17 @@
   "icon": "envelope.fill",
   "type": "prompt",
   "tags": ["writing", "email", "business"]
+}
+,
+{
+  "slug": "search-discogs",
+  "name": "Search Discogs",
+  "description": "Search Discogs for an album or artist",
+  "author": "kisyaki",
+  "version": "1.0",
+  "icon": "opticaldisc.fill",
+  "type": "url",
+  "tags": ["search", "music"]
 }
 ,
 {
@@ -132,6 +154,17 @@
 }
 ,
 {
+  "slug": "search-spotify",
+  "name": "Search Spotify",
+  "description": "Search Spotify for a song or artist",
+  "author": "kisyaki",
+  "version": "1.0",
+  "icon": "music.note",
+  "type": "url",
+  "tags": ["search", "music"]
+}
+,
+{
   "slug": "search-stackoverflow",
   "name": "Search StackOverflow",
   "description": "Search StackOverflow for the selected text",
@@ -140,6 +173,17 @@
   "icon": "magnifyingglass",
   "type": "url",
   "tags": ["search", "developer"]
+}
+,
+{
+  "slug": "search-urban-dictionary",
+  "name": "Search Urban Dictionary",
+  "description": "Look up slang on Urban Dictionary",
+  "author": "kisyaki",
+  "version": "1.0",
+  "icon": "character.book.closed.fill",
+  "type": "url",
+  "tags": ["search", "reference"]
 }
 ,
 {
