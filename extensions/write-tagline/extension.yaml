@@ -1,0 +1,10 @@
+# cai-extension
+name: Write Tagline
+description: Generate punchy taglines for a product or concept
+author: cai-layer
+version: "1.0"
+tags: [creative, marketing]
+icon: lightbulb.fill
+type: prompt
+prompt: |
+  Generate 5 short, memorable taglines for what is described in this text. Each tagline should be under 10 words, punchy, and distinct from the others. Number them 1-5. Do not use any markdown formatting.
