@@ -1,0 +1,10 @@
+# cai-extension
+name: Decline Email
+description: Draft a polite email declining a request or invitation
+author: cai-layer
+version: "1.0"
+tags: [writing, email]
+icon: envelope.badge.shield.half.filled.fill
+type: prompt
+prompt: |
+  Write a short, polite email declining this request or invitation. Be warm but clear. Thank them, decline, and wish them well. Keep it under 4 sentences. Do not use any markdown formatting.
