@@ -165,6 +165,17 @@
 }
 ,
 {
+  "slug": "send-to-slack",
+  "name": "Send to Slack",
+  "description": "Post text to a Slack channel via webhook",
+  "author": "clipboard-ai",
+  "version": "1.0",
+  "icon": "bubble.left.fill",
+  "type": "webhook",
+  "tags": ["productivity", "slack"]
+}
+,
+{
   "slug": "show-in-finder",
   "name": "Show in Finder",
   "description": "Open a file or folder path in Finder",
