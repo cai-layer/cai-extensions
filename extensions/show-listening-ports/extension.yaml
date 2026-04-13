@@ -1,0 +1,9 @@
+# cai-extension
+name: Show Listening Ports
+description: Show all processes listening on TCP ports
+author: cai-layer
+version: "1.0"
+tags: [developer, system]
+icon: network
+type: shell
+command: lsof -iTCP -sTCP:LISTEN -nP | awk 'NR==1 || !/com\.apple/'
