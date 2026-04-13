@@ -1,0 +1,9 @@
+# cai-extension
+name: My Local IP
+description: Get your local network IP address
+author: cai-layer
+version: "1.0"
+tags: [developer, network]
+icon: wifi
+type: shell
+command: ipconfig getifaddr en0
