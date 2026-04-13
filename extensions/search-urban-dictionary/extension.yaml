@@ -1,0 +1,9 @@
+# cai-extension
+name: Search Urban Dictionary
+description: Look up slang on Urban Dictionary
+author: kisyaki
+version: "1.0"
+tags: [search, reference]
+icon: character.book.closed.fill
+type: url
+url: "https://www.urbandictionary.com/define.php?term=%s"

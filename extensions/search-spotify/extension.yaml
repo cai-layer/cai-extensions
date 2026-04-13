@@ -1,0 +1,9 @@
+# cai-extension
+name: Search Spotify
+description: Search Spotify for a song or artist
+author: kisyaki
+version: "1.0"
+tags: [search, music]
+icon: music.note
+type: url
+url: "https://open.spotify.com/search/%s"
