@@ -1,0 +1,9 @@
+# cai-extension
+name: Search GitHub
+description: Search GitHub code for the selected text
+author: cai-layer
+version: "1.0"
+tags: [search, developer]
+icon: magnifyingglass
+type: url
+url: "https://github.com/search?q=%s&type=code"
