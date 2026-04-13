@@ -1,7 +1,7 @@
 # cai-extension
 name: Make Shorter
 description: Condense text while preserving key points
-author: clipboard-ai
+author: cai-layer
 version: "1.0"
 tags: [writing, editing]
 icon: text.badge.minus

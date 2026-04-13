@@ -1,7 +1,7 @@
 # cai-extension
 name: Send to Slack
 description: Post text to a Slack channel via webhook
-author: clipboard-ai
+author: cai-layer
 version: "1.0"
 tags: [productivity, slack]
 icon: bubble.left.fill

@@ -1,7 +1,7 @@
 # cai-extension
 name: Make Longer
 description: Expand text with more detail and clarity
-author: clipboard-ai
+author: cai-layer
 version: "1.0"
 tags: [writing, editing]
 icon: text.badge.plus

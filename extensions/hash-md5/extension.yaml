@@ -1,7 +1,7 @@
 # cai-extension
 name: Hash MD5
 description: Generate an MD5 hash of the text
-author: clipboard-ai
+author: cai-layer
 version: "1.0"
 tags: [developer, security]
 icon: number.circle.fill

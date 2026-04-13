@@ -1,7 +1,7 @@
 # cai-extension
 name: Base64 Encode
 description: Encode text as Base64
-author: clipboard-ai
+author: cai-layer
 version: "1.0"
 tags: [developer, encoding]
 icon: lock.fill

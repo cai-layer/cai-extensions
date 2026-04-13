@@ -1,7 +1,7 @@
 # cai-extension
 name: "Change Tone: Casual"
 description: Rewrite text in a friendly, conversational tone
-author: clipboard-ai
+author: cai-layer
 version: "1.0"
 tags: [writing, tone]
 icon: face.smiling

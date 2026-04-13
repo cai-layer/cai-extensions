@@ -1,7 +1,7 @@
 # cai-extension
 name: Count Characters
 description: Count the number of characters in the text
-author: clipboard-ai
+author: cai-layer
 version: "1.0"
 tags: [developer, utility]
 icon: textformat.123

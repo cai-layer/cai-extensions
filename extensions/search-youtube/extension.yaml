@@ -1,7 +1,7 @@
 # cai-extension
 name: Search YouTube
 description: Search YouTube for the selected text
-author: clipboard-ai
+author: cai-layer
 version: "1.0"
 tags: [search, video]
 icon: play.rectangle.fill

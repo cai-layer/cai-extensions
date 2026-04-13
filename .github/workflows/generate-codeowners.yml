@@ -48,7 +48,7 @@ jobs:
             author=$(grep '^author:' "$file" | head -1 | sed 's/^author: *//' | sed 's/^"//' | sed 's/"$//')
 
             # Skip seed extensions (owned by repo admin)
-            if [ "$author" = "clipboard-ai" ]; then
+            if [ "$author" = "cai-layer" ]; then
               continue
             fi
 

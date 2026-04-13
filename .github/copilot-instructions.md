@@ -22,7 +22,7 @@ Every extension.yaml MUST:
 
 ### author
 - Must match the PR author's GitHub username
-- Exception: `clipboard-ai` for seed extensions
+- Exception: `cai-layer` for seed extensions
 
 ### version
 - Quoted string: `"1.0"`, `"1.1"`, etc.

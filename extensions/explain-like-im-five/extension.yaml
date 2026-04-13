@@ -1,7 +1,7 @@
 # cai-extension
 name: Explain Like I'm Five
 description: Simplify complex text into plain, easy-to-understand language
-author: clipboard-ai
+author: cai-layer
 version: "1.0"
 tags: [writing, learning]
 icon: lightbulb.fill

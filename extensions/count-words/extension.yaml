@@ -1,7 +1,7 @@
 # cai-extension
 name: Count Words
 description: Count the number of words in the text
-author: clipboard-ai
+author: cai-layer
 version: "1.0"
 tags: [developer, utility]
 icon: number

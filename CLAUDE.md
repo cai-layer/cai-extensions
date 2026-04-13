@@ -25,7 +25,7 @@ All extensions are YAML files starting with `# cai-extension` on the first line.
 1. Create a folder under `extensions/` with a kebab-case name
 2. Add `extension.yaml` inside it — must start with `# cai-extension`
 3. Required fields: name, description, author, version, tags, icon, type
-4. Author for seed extensions: `clipboard-ai`
+4. Author for seed extensions: `cai-layer`
 5. Icons use SF Symbol names (e.g. `envelope.fill`, `magnifyingglass`)
 6. For prompt types: the system prompt already says "Output ONLY the processed text" — don't repeat that. Add "Do not use any markdown formatting" since output goes to clipboard.
 

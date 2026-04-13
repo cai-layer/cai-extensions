@@ -1,7 +1,7 @@
 # cai-extension
 name: "Change Tone: Formal"
 description: Rewrite text in a formal, professional tone
-author: clipboard-ai
+author: cai-layer
 version: "1.0"
 tags: [writing, tone, business]
 icon: briefcase.fill

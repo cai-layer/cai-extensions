@@ -76,7 +76,7 @@ jobs:
             author_lineno=$(echo "$author_line" | cut -d: -f1)
             author=$(echo "$author_line" | sed 's/^[0-9]*:author: *//')
             pr_author="${{ github.event.pull_request.user.login }}"
-            if [ -n "$author" ] && [ "$author" != "clipboard-ai" ] && [ "$author" != "$pr_author" ]; then
+            if [ -n "$author" ] && [ "$author" != "cai-layer" ] && [ "$author" != "$pr_author" ]; then
               echo "::error file=$file,line=$author_lineno::author '$author' must match your GitHub username '$pr_author'"
               errors=$((errors + 1))
             fi

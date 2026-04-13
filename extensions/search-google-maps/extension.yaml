@@ -1,7 +1,7 @@
 # cai-extension
 name: Search Google Maps
 description: Open the selected address in Google Maps
-author: clipboard-ai
+author: cai-layer
 version: "1.0"
 tags: [search, maps]
 icon: map.fill

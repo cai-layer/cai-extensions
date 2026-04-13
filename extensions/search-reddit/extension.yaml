@@ -1,7 +1,7 @@
 # cai-extension
 name: Search Reddit
 description: Search Reddit for the selected text
-author: clipboard-ai
+author: cai-layer
 version: "1.0"
 tags: [search, social]
 icon: magnifyingglass

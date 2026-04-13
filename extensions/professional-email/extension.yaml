@@ -1,7 +1,7 @@
 # cai-extension
 name: Professional Email
 description: Rewrite text as a polished professional email
-author: clipboard-ai
+author: cai-layer
 version: "1.0"
 tags: [writing, email, business]
 icon: envelope.fill
