@@ -6,4 +6,4 @@ version: "1.0"
 tags: [text, formatting]
 icon: textformat.size.smaller
 type: shell
-command: echo "{{result}}" | tr '[:upper:]' '[:lower:]'
+shell: echo "{{result}}" | tr '[:upper:]' '[:lower:]'
