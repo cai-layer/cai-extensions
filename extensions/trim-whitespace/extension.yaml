@@ -6,4 +6,4 @@ version: "1.0"
 tags: [developer, text]
 icon: text.justify.leading
 type: shell
-command: echo "{{result}}" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//'
+shell: echo "{{result}}" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//'
