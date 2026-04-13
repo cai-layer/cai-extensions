@@ -1,0 +1,10 @@
+# cai-extension
+name: Humanize Text
+description: Make AI-generated text sound natural and human
+author: cai-layer
+version: "1.0"
+tags: [writing, editing]
+icon: person.fill
+type: prompt
+prompt: |
+  Rewrite this text to sound like a real person wrote it. Rules: avoid dashes —, use short sentences, active voice, and everyday words. Remove filler phrases like "it's important to note" or "in order to." Vary sentence length. Keep the same meaning and information. Do not use any markdown formatting.
