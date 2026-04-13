@@ -6,4 +6,4 @@ version: "1.0"
 tags: [productivity, macos]
 icon: folder
 type: shell
-command: open "{{result}}"
+shell: open "{{result}}"
