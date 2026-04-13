@@ -6,4 +6,4 @@ version: "1.0"
 tags: [productivity, organization]
 icon: folder.badge.gearshape
 type: shell
-command: "mkdir -p ~/Desktop/$(date +%Y-%m-%d) && mv ~/Desktop/*.* ~/Desktop/$(date +%Y-%m-%d)/"
+shell: "mkdir -p ~/Desktop/$(date +%Y-%m-%d) && mv ~/Desktop/*.* ~/Desktop/$(date +%Y-%m-%d)/"
