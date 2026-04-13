@@ -1,0 +1,9 @@
+# cai-extension
+name: Quick Reminder
+description: Create an Apple Reminder from clipboard text
+author: cai-layer
+version: "1.0"
+tags: [productivity, reminders]
+icon: checklist
+type: shell
+command: osascript -e 'tell application "Reminders" to make new reminder with properties {name:"{{result}}"}' -e 'tell application "Reminders" to activate' && echo "Reminder created"
