@@ -1,0 +1,10 @@
+# cai-extension
+name: Extract Action Items
+description: Pull actionable tasks from notes, emails, or messages
+author: cai-layer
+version: "1.0"
+tags: [productivity, writing]
+icon: checklist
+type: prompt
+prompt: |
+  Extract every actionable task from this text. For each task, write one short bullet starting with a verb. Order by priority (most urgent first). Ignore opinions, background info, and pleasantries. If no tasks exist, say "No action items found." Do not use any markdown formatting.
