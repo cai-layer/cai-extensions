@@ -20,6 +20,10 @@ jobs:
           for dir in extensions/*/; do
             [ -d "$dir" ] || continue
             slug=$(basename "$dir")
+
+            # Skip internal directories (e.g. _local)
+            case "$slug" in _*) continue ;; esac
+
             file="$dir/extension.yaml"
 
             if [ ! -f "$file" ]; then
