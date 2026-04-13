@@ -5,5 +5,9 @@
 * @soyasis
 
 # Extension-specific owners
+/extensions/organize-desktop-by-date/ @kisyaki @soyasis
+/extensions/search-discogs/ @kisyaki @soyasis
+/extensions/search-spotify/ @kisyaki @soyasis
+/extensions/search-urban-dictionary/ @kisyaki @soyasis
 
 # End of auto-generated CODEOWNERS
