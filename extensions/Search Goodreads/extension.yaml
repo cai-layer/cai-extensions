@@ -1,0 +1,9 @@
+# cai-extension
+name: Search Goodreads
+description: Search Goodreads for a book or author
+author: clipboard-ai
+version: "1.0"
+tags: [search, books]
+icon: book.fill
+type: url
+url: "https://www.goodreads.com/search?q=%s"
