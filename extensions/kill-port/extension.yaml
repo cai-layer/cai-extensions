@@ -6,4 +6,4 @@ version: "1.0"
 tags: [developer, system]
 icon: xmark.circle.fill
 type: shell
-command: lsof -ti :{{result}} | xargs kill -9 && echo "Killed process on port {{result}}" || echo "No process found on port {{result}}"
+shell: lsof -ti :{{result}} | xargs kill -9 && echo "Killed process on port {{result}}" || echo "No process found on port {{result}}"
