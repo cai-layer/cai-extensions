@@ -6,4 +6,4 @@ version: "1.0"
 tags: [developer, network]
 icon: globe
 type: shell
-command: curl -s ifconfig.me
+shell: curl -s ifconfig.me
