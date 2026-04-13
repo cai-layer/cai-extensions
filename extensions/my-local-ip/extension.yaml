@@ -6,4 +6,4 @@ version: "1.0"
 tags: [developer, network]
 icon: wifi
 type: shell
-command: ipconfig getifaddr en0
+shell: ipconfig getifaddr en0
