@@ -1,7 +1,7 @@
 # cai-extension
 name: Organize Desktop by Date
 description: Move Desktop files into a dated folder
-author: clipboard-ai
+author: kisyaki
 version: "1.0"
 tags: [productivity, organization]
 icon: folder.badge.gearshape

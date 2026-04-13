@@ -1,7 +1,7 @@
 # cai-extension
 name: Search Urban Dictionary
 description: Look up slang on Urban Dictionary
-author: clipboard-ai
+author: kisyaki
 version: "1.0"
 tags: [search, reference]
 icon: character.book.closed.fill

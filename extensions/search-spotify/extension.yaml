@@ -1,7 +1,7 @@
 # cai-extension
 name: Search Spotify
 description: Search Spotify for a song or artist
-author: clipboard-ai
+author: kisyaki
 version: "1.0"
 tags: [search, music]
 icon: music.note
