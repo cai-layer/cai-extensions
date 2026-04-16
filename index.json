@@ -22,25 +22,14 @@
 }
 ,
 {
-  "slug": "count-characters",
-  "name": "Count Characters",
-  "description": "Count the number of characters in the text",
-  "author": "cai-layer",
-  "version": "1.0",
-  "icon": "textformat.123",
-  "type": "shell",
-  "tags": ["developer", "utility"]
-}
-,
-{
-  "slug": "count-words",
-  "name": "Count Words",
-  "description": "Count the number of words in the text",
+  "slug": "count-words-and-chars",
+  "name": "Count Words & Chars",
+  "description": "Show word and character count of the text",
   "author": "cai-layer",
   "version": "1.0",
   "icon": "number",
   "type": "shell",
-  "tags": ["developer", "utility"]
+  "tags": ["text", "utility"]
 }
 ,
 {
