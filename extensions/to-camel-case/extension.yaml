@@ -1,0 +1,9 @@
+# cai-extension
+name: To camelCase
+description: Convert text to camelCase
+author: cai-layer
+version: "1.0"
+tags: [developer, formatting]
+icon: textformat.abc
+type: shell
+shell: echo "{{result}}" | python3 -c "import sys,re;w=re.split(r'[\s_\-]+',sys.stdin.read().strip());print(w[0].lower()+''.join(x.capitalize() for x in w[1:]))"

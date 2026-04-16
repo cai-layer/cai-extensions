@@ -1,0 +1,9 @@
+# cai-extension
+name: Timestamp
+description: Insert current date and time
+author: cai-layer
+version: "1.0"
+tags: [productivity, utility]
+icon: clock.fill
+type: shell
+shell: date "+%Y-%m-%d %H:%M:%S %Z"

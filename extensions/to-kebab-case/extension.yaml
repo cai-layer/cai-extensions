@@ -1,0 +1,9 @@
+# cai-extension
+name: To kebab-case
+description: Convert text to kebab-case
+author: cai-layer
+version: "1.0"
+tags: [developer, formatting]
+icon: minus
+type: shell
+shell: echo "{{result}}" | python3 -c "import sys,re;print(re.sub(r'[\s_]+','-',sys.stdin.read().strip()).lower())"

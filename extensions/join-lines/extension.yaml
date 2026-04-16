@@ -1,0 +1,9 @@
+# cai-extension
+name: Join Lines
+description: Combine multi-line text into a single line
+author: cai-layer
+version: "1.0"
+tags: [text, formatting]
+icon: arrow.up.and.down.text.horizontal
+type: shell
+shell: echo "{{result}}" | awk 'NF' | tr '\n' ' ' | sed 's/  */ /g; s/ $//'

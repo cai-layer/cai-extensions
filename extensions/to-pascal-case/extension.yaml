@@ -1,0 +1,9 @@
+# cai-extension
+name: To PascalCase
+description: Convert text to PascalCase
+author: cai-layer
+version: "1.0"
+tags: [developer, formatting]
+icon: textformat.abc.dottedunderline
+type: shell
+shell: echo "{{result}}" | python3 -c "import sys,re;w=re.split(r'[\s_\-]+',sys.stdin.read().strip());print(''.join(x.capitalize() for x in w))"

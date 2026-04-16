@@ -1,0 +1,18 @@
+# cai-extension
+name: Toggle Hidden Files
+description: Show or hide hidden files in Finder
+author: cai-layer
+version: "1.0"
+tags: [system, macos]
+icon: eye.slash
+type: shell
+shell: |
+  current=$(defaults read com.apple.finder AppleShowAllFiles 2>/dev/null)
+  if [ "$current" = "1" ] || [ "$current" = "YES" ]; then
+    defaults write com.apple.finder AppleShowAllFiles -bool false
+    echo "Hidden files: OFF"
+  else
+    defaults write com.apple.finder AppleShowAllFiles -bool true
+    echo "Hidden files: ON"
+  fi
+  killall Finder

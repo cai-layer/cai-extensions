@@ -1,0 +1,9 @@
+# cai-extension
+name: Remove Spaces
+description: Remove all whitespace from text
+author: cai-layer
+version: "1.0"
+tags: [text, formatting]
+icon: rectangle.compress.vertical
+type: shell
+shell: echo "{{result}}" | tr -d '[:space:]'
