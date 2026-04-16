@@ -121,6 +121,17 @@
 }
 ,
 {
+  "slug": "join-lines",
+  "name": "Join Lines",
+  "description": "Combine multi-line text into a single line",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "arrow.up.and.down.text.horizontal",
+  "type": "shell",
+  "tags": ["text", "formatting"]
+}
+,
+{
   "slug": "json-to-yaml",
   "name": "JSON to YAML",
   "description": "Convert JSON to YAML format",
@@ -250,6 +261,17 @@
   "icon": "checklist",
   "type": "shell",
   "tags": ["productivity", "reminders"]
+}
+,
+{
+  "slug": "remove-spaces",
+  "name": "Remove Spaces",
+  "description": "Remove all whitespace from text",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "rectangle.compress.vertical",
+  "type": "shell",
+  "tags": ["text", "formatting"]
 }
 ,
 {
@@ -415,6 +437,72 @@
   "icon": "face.smiling",
   "type": "prompt",
   "tags": ["writing", "emoji"]
+}
+,
+{
+  "slug": "timestamp",
+  "name": "Timestamp",
+  "description": "Insert current date and time",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "clock.fill",
+  "type": "shell",
+  "tags": ["productivity", "utility"]
+}
+,
+{
+  "slug": "to-camel-case",
+  "name": "To camelCase",
+  "description": "Convert text to camelCase",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "textformat.abc",
+  "type": "shell",
+  "tags": ["developer", "formatting"]
+}
+,
+{
+  "slug": "to-kebab-case",
+  "name": "To kebab-case",
+  "description": "Convert text to kebab-case",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "minus",
+  "type": "shell",
+  "tags": ["developer", "formatting"]
+}
+,
+{
+  "slug": "to-pascal-case",
+  "name": "To PascalCase",
+  "description": "Convert text to PascalCase",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "textformat.abc.dottedunderline",
+  "type": "shell",
+  "tags": ["developer", "formatting"]
+}
+,
+{
+  "slug": "to-snake-case",
+  "name": "To snake_case",
+  "description": "Convert text to snake_case",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "underline",
+  "type": "shell",
+  "tags": ["developer", "formatting"]
+}
+,
+{
+  "slug": "toggle-hidden-files",
+  "name": "Toggle Hidden Files",
+  "description": "Show or hide hidden files in Finder",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "eye.slash",
+  "type": "shell",
+  "tags": ["system", "macos"]
 }
 ,
 {
