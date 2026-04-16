@@ -1,0 +1,10 @@
+# cai-extension
+name: Count Words & Chars
+description: Show word and character count of the text
+author: cai-layer
+version: "1.0"
+tags: [text, utility]
+icon: number
+type: shell
+show_in_action_list: true
+shell: echo "$(echo -n '{{result}}' | wc -w | tr -d ' ') words, $(echo -n '{{result}}' | wc -c | tr -d ' ') chars"
