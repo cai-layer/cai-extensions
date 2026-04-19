@@ -1,0 +1,10 @@
+# cai-extension
+name: Title Case
+description: Convert text to Proper Title Case
+author: fabianwohlfartblank
+version: "1.0"
+tags: [ text, formatting ]
+icon: textformat
+type: shell
+shell: echo "{{result}}" | awk
+  '{for(i=1;i<=NF;i++){$i=toupper(substr($i,1,1))tolower(substr($i,2))}}1'
