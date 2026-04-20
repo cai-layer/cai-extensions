@@ -1,0 +1,14 @@
+# cai-extension
+name: Color Converter
+description: Convert colors between hex, RGB, and HSL formats
+author: fabianwohlfartblank
+version: "1.0"
+tags: [ developer, design ]
+icon: paintpalette.fill
+type: prompt
+prompt: |
+  Convert this color value to all three formats. Accept any input format (hex, rgb, hsl, or color name). Output exactly this:
+
+  HEX: #RRGGBB
+  RGB: rgb(R, G, B)
+  HSL: hsl(H, S%, L%)

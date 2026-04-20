@@ -1,0 +1,10 @@
+# cai-extension
+name: CSS to Tailwind
+description: Convert CSS declarations to Tailwind utility classes
+author: fabianwohlfartblank
+version: "1.0"
+tags: [ developer, css ]
+icon: paintbrush.fill
+type: prompt
+prompt: |
+  Convert these CSS declarations to Tailwind CSS utility classes. Output only the space-separated class names, nothing else. Use the latest Tailwind v4 syntax. If a property has no direct Tailwind equivalent, use arbitrary value syntax like [property:value].
