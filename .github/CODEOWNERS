@@ -5,9 +5,12 @@
 * @soyasis
 
 # Extension-specific owners
+/extensions/color-converter/ @fabianwohlfartblank @soyasis
+/extensions/css-to-tailwind/ @fabianwohlfartblank @soyasis
 /extensions/organize-desktop-by-date/ @kisyaki @soyasis
 /extensions/search-discogs/ @kisyaki @soyasis
 /extensions/search-spotify/ @kisyaki @soyasis
 /extensions/search-urban-dictionary/ @kisyaki @soyasis
+/extensions/title-case/ @fabianwohlfartblank @soyasis
 
 # End of auto-generated CODEOWNERS
