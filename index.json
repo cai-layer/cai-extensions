@@ -22,6 +22,17 @@
 }
 ,
 {
+  "slug": "color-converter",
+  "name": "Color Converter",
+  "description": "Convert colors between hex, RGB, and HSL formats",
+  "author": "fabianwohlfartblank",
+  "version": "1.0",
+  "icon": "paintpalette.fill",
+  "type": "prompt",
+  "tags": [" developer", "design "]
+}
+,
+{
   "slug": "count-words-and-chars",
   "name": "Count Words & Chars",
   "description": "Show word and character count of the text",
@@ -41,6 +52,17 @@
   "icon": "clock.fill",
   "type": "prompt",
   "tags": ["developer", "utility"]
+}
+,
+{
+  "slug": "css-to-tailwind",
+  "name": "CSS to Tailwind",
+  "description": "Convert CSS declarations to Tailwind utility classes",
+  "author": "fabianwohlfartblank",
+  "version": "1.0",
+  "icon": "paintbrush.fill",
+  "type": "prompt",
+  "tags": [" developer", "css "]
 }
 ,
 {
@@ -437,6 +459,17 @@
   "icon": "clock.fill",
   "type": "shell",
   "tags": ["productivity", "utility"]
+}
+,
+{
+  "slug": "title-case",
+  "name": "Title Case",
+  "description": "Convert text to Proper Title Case",
+  "author": "fabianwohlfartblank",
+  "version": "1.0",
+  "icon": "textformat",
+  "type": "shell",
+  "tags": [" text", "formatting "]
 }
 ,
 {
