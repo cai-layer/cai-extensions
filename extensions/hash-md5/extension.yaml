@@ -7,4 +7,4 @@ tags: [developer, security]
 icon: number.circle.fill
 type: shell
 show_in_action_list: true
-shell: "echo -n '{{result}}' | md5"
+shell: "echo -n {{result}} | md5"

@@ -570,4 +570,48 @@
   "type": "prompt",
   "tags": ["creative", "marketing"]
 }
+,
+{
+  "slug": "slack-tldr",
+  "name": "Slack TL;DR",
+  "description": "Post a 1-2 sentence summary of your clipboard to a Slack channel",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "bubble.left.fill",
+  "type": "webhook",
+  "tags": ["productivity", "slack", "llm-filter"]
+}
+,
+{
+  "slug": "tldr-aloud",
+  "name": "TL;DR aloud",
+  "description": "Speak a one-sentence summary of your clipboard out loud",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "speaker.wave.2.fill",
+  "type": "shell",
+  "tags": ["audio", "summarize", "llm-filter"]
+}
+,
+{
+  "slug": "save-to-notes-auto-title",
+  "name": "Save to Notes (auto-title)",
+  "description": "Save clipboard to Apple Notes with an LLM-generated title",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "square.and.pencil",
+  "type": "shell",
+  "tags": ["productivity", "notes", "llm-filter"]
+}
+,
+{
+  "slug": "commit-message-from-diff",
+  "name": "Commit message from diff",
+  "description": "Generate a Conventional Commits message from a git diff",
+  "author": "cai-layer",
+  "version": "1.0",
+  "icon": "arrow.triangle.branch",
+  "type": "shell",
+  "tags": ["developer", "git", "llm-filter"]
+}
 ]

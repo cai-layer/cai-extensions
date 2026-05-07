@@ -6,4 +6,4 @@ version: "1.0"
 tags: [developer, formatting]
 icon: underline
 type: shell
-shell: echo "{{result}}" | python3 -c "import sys,re;print(re.sub(r'[\s\-]+','_',sys.stdin.read().strip()).lower())"
+shell: echo {{result}} | python3 -c "import sys,re;print(re.sub(r'[\s\-]+','_',sys.stdin.read().strip()).lower())"
