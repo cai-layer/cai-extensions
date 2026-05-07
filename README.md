@@ -24,6 +24,41 @@ You can also install manually: copy the YAML content of any `extension.yaml` (in
 
 > **Custom Actions** appear as actions in the Cai action window. **Destinations** are output targets that receive text after an action runs. See the [docs](https://getcai.app/docs/usage/extensions) for details.
 
+## Chaining Actions
+
+Any action or destination can chain to other steps via the optional `next:` field. Each step receives the previous step's output as `{{result}}`. Four step types:
+
+```yaml
+next:
+  - action: "Summarize"             # run a local Cai action by name
+  - destination: "Send to Slack"    # run a local destination (semantic alias for action)
+  - llm: "translate to Spanish"     # inline one-off LLM transformation
+  - apple_shortcut: "Save to Bear"  # invoke an Apple Shortcuts.app shortcut
+```
+
+**Example — summarize and post to Slack:**
+
+```yaml
+# cai-extension
+name: Summarize & Slack
+description: Summarize clipboard text and post to Slack
+author: cai-layer
+version: "1.0"
+tags: [productivity, ai]
+icon: bubble.left.and.text.bubble.right
+type: prompt
+prompt: |
+  Summarize this in 3 bullet points. Keep it under 60 words. Do not use any markdown formatting.
+next:
+  - destination: "Send to Slack"
+```
+
+**Notes:**
+
+- Chains run sequentially in-memory (not via the system clipboard), so the user can copy other text mid-chain without breaking the flow
+- Cycle detection and a max-depth-10 cap protect against runaway loops
+- For `action:` / `destination:` references, the user must have that action installed locally — the in-app browser will prompt to install missing dependencies when available
+
 ## Submit an Extension
 
 The easiest way to share an extension you've built:
