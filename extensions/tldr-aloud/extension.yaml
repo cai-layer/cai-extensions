@@ -1,0 +1,10 @@
+# cai-extension
+name: TL;DR aloud
+description: Speaks a one-sentence summary of your clipboard out loud. Local LLM, fully on-device.
+author: cai-layer
+version: "1.0"
+tags: [audio, summarize, llm-filter, accessibility]
+icon: speaker.wave.2.fill
+type: shell
+shell: |
+  say {{result|llm:"reword as one short spoken sentence, no preamble"|shell}}

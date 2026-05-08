@@ -6,4 +6,8 @@ version: "1.0"
 tags: [productivity, notes]
 icon: note.text
 type: shell
-shell: osascript -e 'tell application "Notes" to tell account "iCloud" to make new note at folder "Notes" with properties {body:"{{result}}"}' -e 'tell application "Notes" to activate' && echo "Note created"
+shell: |
+  osascript -e 'on run argv
+    tell application "Notes" to tell account "iCloud" to make new note at folder "Notes" with properties {body:item 1 of argv}
+    tell application "Notes" to activate
+  end run' -- {{result}} && echo "Note created"

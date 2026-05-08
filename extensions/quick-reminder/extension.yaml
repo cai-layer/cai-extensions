@@ -6,4 +6,8 @@ version: "1.0"
 tags: [productivity, reminders]
 icon: checklist
 type: shell
-shell: osascript -e 'tell application "Reminders" to make new reminder with properties {name:"{{result}}"}' -e 'tell application "Reminders" to activate' && echo "Reminder created"
+shell: |
+  osascript -e 'on run argv
+    tell application "Reminders" to make new reminder with properties {name:item 1 of argv}
+    tell application "Reminders" to activate
+  end run' -- {{result}} && echo "Reminder created"

@@ -86,6 +86,27 @@ jobs:
               echo "::error file=$file,line=1::directory name must be lowercase with hyphens only"
               errors=$((errors + 1))
             fi
+
+            # Validate `next:` chain step keys (if present). Each list item must
+            # use exactly one of: action, destination, llm, apple_shortcut.
+            # Mirrors ExtensionParser.parseNext in the macOS app.
+            if grep -q '^next:' "$file"; then
+              # Pull lines starting with "  - " inside the next: block, then
+              # extract the key before the colon. Stops at the next top-level
+              # field (line starting with non-space). Use process substitution
+              # so `errors` increments propagate to the parent shell (a piped
+              # `while read` would run in a subshell and discard them).
+              while read -r key; do
+                case "$key" in
+                  action|destination|llm|apple_shortcut) ;;
+                  "") ;;
+                  *)
+                    echo "::error file=$file,line=1::unknown next: step key '$key' — must be one of: action, destination, llm, apple_shortcut"
+                    errors=$((errors + 1))
+                    ;;
+                esac
+              done < <(awk '/^next:/{flag=1; next} flag && /^[^ ]/{flag=0} flag && /^  - / { sub(/^  - /, ""); sub(/:.*/, ""); print }' "$file")
+            fi
           done
 
           if [ $errors -gt 0 ]; then

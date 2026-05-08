@@ -1,0 +1,29 @@
+# cai-extension
+name: Commit Message from Repo
+description: Generate a Conventional Commits title from staged changes in a repo path
+author: cai-layer
+version: "1.0"
+tags: [developer, git, chained]
+icon: arrow.triangle.branch
+type: shell
+shell: |
+  REPO={{result}}
+  cd "$REPO" 2>/dev/null || { echo "Not a directory: $REPO"; exit 1; }
+  [ -d .git ] || { echo "Not a git repo: $REPO"; exit 1; }
+  BRANCH=$(git branch --show-current)
+  DIFF=$(git diff --cached)
+  if [ -z "$DIFF" ]; then
+    DIFF=$(git diff)
+    SCOPE="(unstaged)"
+  else
+    SCOPE="(staged)"
+  fi
+  if [ -z "$DIFF" ]; then
+    echo "No changes to commit in $REPO"
+    exit 0
+  fi
+  printf "Repo: %s\nBranch: %s\nChanges: %s\n\n%s" "$(basename "$REPO")" "$BRANCH" "$SCOPE" "$DIFF"
+next:
+  - llm: |
+      Below is a git diff with repo and branch context. Generate ONLY the first line of a Conventional Commits message: type(scope): subject (max 72 chars). Use the branch name and repo as hints for scope. No body, no preamble, no quotes, no markdown. Just the single subject line.
+  - destination: "Copy to Clipboard"

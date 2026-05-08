@@ -1,0 +1,16 @@
+# cai-extension
+name: My GitHub Issues → Notes
+description: Fetch your open GitHub issues, prioritize them, and save to Notes
+author: cai-layer
+version: "1.0"
+tags: [developer, github, productivity, chained]
+icon: tray.full.fill
+type: shell
+shell: |
+  /opt/homebrew/bin/gh search issues "is:open assignee:@me" \
+    --json title,number,createdAt,updatedAt,labels,url,repository \
+    --limit 50
+next:
+  - llm: |
+      Below is a JSON array of GitHub issues assigned to me. Turn it into a prioritized todo list grouped by priority. For each issue, output one line: '[emoji] Title (#number, repo-name, days-old)'. Use 🔴 for P0/critical/urgent labels, 🟡 for bug labels, 🟢 for everything else. Within each group, order by oldest first. Add a header line: 'GitHub Issues — [today's date]'. Be concise. Do not use any markdown formatting.
+  - destination: "Notes"

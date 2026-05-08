@@ -7,4 +7,4 @@ tags: [developer, encoding]
 icon: lock.open.fill
 type: shell
 show_in_action_list: true
-shell: "echo '{{result}}' | base64 -D"
+shell: "echo {{result}} | base64 -D"

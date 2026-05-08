@@ -1,0 +1,22 @@
+# cai-extension
+name: Article URL → Slack TLDR
+description: Fetch an article URL, summarize it, and post the TLDR to Slack
+author: cai-layer
+version: "1.0"
+tags: [productivity, ai, slack, chained]
+icon: link.badge.plus
+type: shell
+shell: |
+  curl -sL --max-time 15 -A "Mozilla/5.0" {{result}} \
+    | python3 -c "
+  import sys, re, html
+  raw = sys.stdin.read()
+  raw = re.sub(r'<(script|style)[^>]*>.*?</\1>', '', raw, flags=re.S | re.I)
+  text = re.sub(r'<[^>]+>', ' ', raw)
+  text = html.unescape(text)
+  text = re.sub(r'\s+', ' ', text).strip()
+  print(text[:6000])
+  "
+next:
+  - llm: "Summarize this article in 3 short bullets. Keep it under 60 words total. Be specific — no fluff. Do not use any markdown."
+  - destination: "Send to Slack"

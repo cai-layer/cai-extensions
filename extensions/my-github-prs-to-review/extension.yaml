@@ -1,0 +1,16 @@
+# cai-extension
+name: My GitHub PR Review Queue → Notes
+description: Fetch PRs awaiting your review, summarize them, and save to Notes
+author: cai-layer
+version: "1.0"
+tags: [developer, github, productivity, chained]
+icon: checkmark.seal.fill
+type: shell
+shell: |
+  /opt/homebrew/bin/gh search prs "is:open review-requested:@me" \
+    --json title,number,createdAt,updatedAt,author,url,repository \
+    --limit 50
+next:
+  - llm: |
+      Below is a JSON array of GitHub PRs that requested my review. Turn it into a prioritized review queue. For each PR, output one line: '[emoji] Title (#number, repo-name, by @author, days-old)'. Use 🔴 for PRs older than 3 days, 🟡 for 1-3 days, 🟢 for under a day. Within each group, order by oldest first. Add a header line: 'PR Review Queue — [today's date]'. Be concise. Do not use any markdown formatting.
+  - destination: "Notes"
