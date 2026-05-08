@@ -1,0 +1,12 @@
+# cai-extension
+name: Summarize & Slack
+description: Summarize clipboard text and post to Slack
+author: cai-layer
+version: "1.0"
+tags: [productivity, ai, slack, chained]
+icon: bubble.left.and.text.bubble.right.fill
+type: prompt
+prompt: |
+  Summarize this in 3 short bullet points. Keep it under 60 words total. Be specific. Do not use any markdown formatting.
+next:
+  - destination: "Send to Slack"
