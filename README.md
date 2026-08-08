@@ -1,6 +1,6 @@
 # Cai Extensions
 
-Community-contributed extensions for [Cai](https://getcai.app), the macOS clipboard manager.
+Community-contributed extensions for [Cai](https://getcai.app), the local-first action layer for macOS.
 
 ## Install an Extension
 

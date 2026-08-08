@@ -1,6 +1,6 @@
 # Cai Extensions
 
-Community extensions repo for [Cai](https://getcai.app), a native macOS clipboard manager.
+Community extensions repo for [Cai](https://getcai.app), the local-first action layer for macOS.
 
 ## Key Files
 
